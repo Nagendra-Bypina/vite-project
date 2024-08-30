@@ -18,6 +18,7 @@ export default class ContactForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     console.log("form submitted", this.state);
+    this.props.onFormSubmit(this.state);
   };
   render() {
     return (
